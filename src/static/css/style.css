@@ -212,6 +212,10 @@ body {
     margin-bottom: var(--spacing-md);
 }
 
+#connect-button.connected {
+    background: var(--gradient-danger);
+}
+
 /* 设置按钮样式 */
 #config-toggle {
     position: absolute;
