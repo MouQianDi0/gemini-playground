@@ -22,35 +22,35 @@
         <div id="config-container" class="hidden-mobile">
             <div class="config-wrapper">
                 <div class="setting-container">
-                    <span class="setting-label">Sound: </span>
+                    <span class="setting-label">音色：</span>
                     <select id="voice-select">
-                        <option value="Puck">Puck (Male)</option>
-                        <option value="Charon">Charon (Male)</option>
-                        <option value="Fenrir">Fenrir (Male)</option>
-                        <option value="Kore">Kore (Female)</option>
-                        <option value="Aoede" selected>Aoede (Female)</option>
+                        <option value="Puck">Puck (男性)</option>
+                        <option value="Charon">Charon (男性)</option>
+                        <option value="Fenrir">Fenrir (男性)</option>
+                        <option value="Kore">Kore (女性)</option>
+                        <option value="Aoede" selected>Aoede (女性)</option>
                     </select>
                 </div>
                 <div class="setting-container">
-                    <span class="setting-label">Response Type: </span>
+                    <span class="setting-label">回复形式: </span>
                     <select id="response-type-select">
-                        <option value="text">Text</option>
-                        <option value="audio" selected>Audio</option>
+                        <option value="text">文本</option>
+                        <option value="audio" selected>音频</option>
                     </select>
                 </div>
                 <div class="setting-container">
-                    <span class="setting-label">Video FPS: </span>
+                    <span class="setting-label">FPS: </span>
                     <input type="number" id="fps-input" placeholder="Video FPS" value="1" min="1" max="30" step="1"/>
-                    <span class="fps-help">Higher FPS need more network bandwidth</span>
+                    <span class="fps-help">更高的帧率要更好的网络</span>
                 </div>
                 <textarea id="system-instruction" placeholder="Enter custom system instructions..." rows="6"></textarea>
-                <button id="apply-config">Confirm</button>
+                <button id="apply-config">保存设置</button>
             </div>
         </div>
-        <button id="connect-button">Connect</button>
+        <button id="connect-button">连接</button>
         <div id="logs-container"></div>
         <input type="text" id="message-input" placeholder="Enter message...">
-        <button id="send-button">Send</button>
+        <button id="send-button">发送</button>
         <button id="mic-button">
             <span id="mic-icon" class="material-symbols-outlined">mic</span>
         </button>
@@ -62,11 +62,11 @@
         </button>
         <div class="audio-visualizers">
             <div class="visualizer-container">
-                <label>Input Audio</label>
+                <label>You</label>
                 <div id="input-audio-visualizer"></div>
             </div>
             <div class="visualizer-container">
-                <label>Output Audio</label>
+                <label>Gemini</label>
                 <div id="audio-visualizer"></div>
             </div>
         </div>
