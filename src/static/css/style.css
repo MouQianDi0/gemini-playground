@@ -231,7 +231,7 @@ body {
 }
 
 #config-toggle:hover {
-    color: var(--primary-color);
+    color: var(--text-secondary);
     background: rgba(var(--primary-color-rgb), 0.01);
     transform: rotate(360deg);
 }
